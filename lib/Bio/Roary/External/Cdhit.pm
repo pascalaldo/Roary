@@ -48,7 +48,7 @@ sub _build_memory_in_mb
     $memory_required = int($memory_required/1000000);
     # Give it bucket loads of memory for the worst case scenario
     $memory_required *= 5;
-    $memory_required = 2000 if($memory_required < 2000);
+    $memory_required = 2225 if($memory_required < 2225);
   }
 
   return $memory_required;
